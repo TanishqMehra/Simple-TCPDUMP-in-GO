@@ -22,12 +22,12 @@ string pattern for capturing only packets with matching payloads.
     filter is applied). You are not required to implement wildcard or regular
     expression matching. A simple string matching operation should suffice.
 
-<expression> is a **BPF filter** that specifies which packets will be dumped. If
+expression is a **BPF filter** that specifies which packets will be dumped. If
 no filter is given, all packets seen on the interface (or contained in the
 trace) should be dumped. Otherwise, only packets matching <expression> should
 be dumped.
   
-  
+---------------------------------------------------------------------------------------------------------
   
 Kindly refer to the file mydump.go for the implementation of the passive network monitoring system
 using Golang.
