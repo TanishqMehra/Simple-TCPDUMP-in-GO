@@ -2,16 +2,14 @@
 A simplified version of TCPDUMP in Golang
 
 Developed a passive network monitoring application
-written in Go using the GoPacket library. The program, called 'mydump', will
+written in **Go** using the **GoPacket** library. The program, called '**mydump**', will
 capture the traffic from a network interface in promiscuous mode (or read the
 packets from a pcap trace file) and print a record for each packet in its
 standard output, much like a simplified version of tcpdump. The user should be
 able to specify a BPF filter for capturing a subset of the traffic, and/or a
 string pattern for capturing only packets with matching payloads.
 
-Your program should conform to the following specification:
-
-go run mydump.go [-i interface] [-r file] [-s string] expression
+**go run mydump.go [-i interface] [-r file] [-s string] expression**
 
 -i  Live capture from the network device <interface> (e.g., eth0). If not
     specified, mydump should automatically select a default interface to
@@ -24,7 +22,7 @@ go run mydump.go [-i interface] [-r file] [-s string] expression
     filter is applied). You are not required to implement wildcard or regular
     expression matching. A simple string matching operation should suffice.
 
-<expression> is a BPF filter that specifies which packets will be dumped. If
+<expression> is a **BPF filter** that specifies which packets will be dumped. If
 no filter is given, all packets seen on the interface (or contained in the
 trace) should be dumped. Otherwise, only packets matching <expression> should
 be dumped.
